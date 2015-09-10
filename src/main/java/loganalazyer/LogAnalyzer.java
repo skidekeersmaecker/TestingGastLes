@@ -1,3 +1,5 @@
+package loganalazyer;
+
 import java.util.List;
 
 public class LogAnalyzer {

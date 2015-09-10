@@ -1,3 +1,5 @@
+package beeroclock;
+
 import java.util.Calendar;
 
 public class BeerOClockChecker {
