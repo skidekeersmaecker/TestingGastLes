@@ -70,7 +70,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="src\BeerOClockChecker.cs" />
     <Compile Include="src\Fibonacci.cs" />
+    <Compile Include="test\BeerOClockCheckerTest.cs" />
     <Compile Include="test\ExampleTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="test\NSubstituteExample.cs" />
