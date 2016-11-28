@@ -76,6 +76,13 @@
     <Compile Include="src\loganalyzer\ILogger.cs" />
     <Compile Include="src\loganalyzer\ILogSource.cs" />
     <Compile Include="src\loganalyzer\LogAnalyzer.cs" />
+    <Compile Include="src\tripservice\CollaboratorCallException.cs" />
+    <Compile Include="src\tripservice\Trip.cs" />
+    <Compile Include="src\tripservice\TripDAO.cs" />
+    <Compile Include="src\tripservice\TripService.cs" />
+    <Compile Include="src\tripservice\User.cs" />
+    <Compile Include="src\tripservice\UserNotLoggedInException.cs" />
+    <Compile Include="src\tripservice\UserSession.cs" />
     <Compile Include="test\BeerOClockCheckerTest.cs" />
     <Compile Include="test\CalculatorTests.cs" />
     <Compile Include="test\ExampleTest.cs" />
