@@ -70,31 +70,33 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="src\BeerOClockChecker.cs" />
-    <Compile Include="src\Calculator.cs" />
-    <Compile Include="src\Fibonacci.cs" />
-    <Compile Include="src\loganalyzer\ILogger.cs" />
-    <Compile Include="src\loganalyzer\ILogSource.cs" />
-    <Compile Include="src\loganalyzer\LogAnalyzer.cs" />
-    <Compile Include="src\tripservice\CollaboratorCallException.cs" />
-    <Compile Include="src\tripservice\Trip.cs" />
-    <Compile Include="src\tripservice\TripDAO.cs" />
-    <Compile Include="src\tripservice\TripService.cs" />
-    <Compile Include="src\tripservice\User.cs" />
-    <Compile Include="src\tripservice\UserNotLoggedInException.cs" />
-    <Compile Include="src\tripservice\UserSession.cs" />
-    <Compile Include="test\BeerOClockCheckerTest.cs" />
-    <Compile Include="test\CalculatorTests.cs" />
-    <Compile Include="test\ExampleTest.cs" />
+    <Compile Include="beeroclock\BeerOClockChecker.cs" />
+    <Compile Include="calculator\Calculator.cs" />
+    <Compile Include="1 - parameterized-test-example\Fibonacci.cs" />
+    <Compile Include="loganalyzer\ILogger.cs" />
+    <Compile Include="loganalyzer\ILogSource.cs" />
+    <Compile Include="loganalyzer\LogAnalyzer.cs" />
+    <Compile Include="tripservice\CollaboratorCallException.cs" />
+    <Compile Include="tripservice\Trip.cs" />
+    <Compile Include="tripservice\TripDAO.cs" />
+    <Compile Include="tripservice\TripService.cs" />
+    <Compile Include="tripservice\User.cs" />
+    <Compile Include="tripservice\UserNotLoggedInException.cs" />
+    <Compile Include="tripservice\UserSession.cs" />
+    <Compile Include="beeroclock\BeerOClockCheckerTest.cs" />
+    <Compile Include="calculator\CalculatorTests.cs" />
+    <Compile Include="0 - test examples\ExampleTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="test\LogAnalyzerTests.cs" />
-    <Compile Include="test\NSubstituteExample.cs" />
-    <Compile Include="test\ParametrizedTestExample.cs" />
+    <Compile Include="loganalyzer\LogAnalyzerTests.cs" />
+    <Compile Include="0 - test examples\NSubstituteExample.cs" />
+    <Compile Include="1 - parameterized-test-example\ParametrizedTestExample.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="tdd-stringcalculator\" />
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
