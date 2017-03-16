@@ -76,6 +76,8 @@
     <Compile Include="loganalyzer\ILogger.cs" />
     <Compile Include="loganalyzer\ILogSource.cs" />
     <Compile Include="loganalyzer\LogAnalyzer.cs" />
+    <Compile Include="tdd-stringcalculator\StringCalculator.cs" />
+    <Compile Include="tdd-stringcalculator\StringCalculatorTests.cs" />
     <Compile Include="tripservice\CollaboratorCallException.cs" />
     <Compile Include="tripservice\Trip.cs" />
     <Compile Include="tripservice\TripDAO.cs" />
@@ -93,10 +95,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="tdd-stringcalculator\instructions.md" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="tdd-stringcalculator\" />
-  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
