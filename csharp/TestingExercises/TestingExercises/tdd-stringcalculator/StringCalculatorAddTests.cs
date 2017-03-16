@@ -3,11 +3,11 @@
 namespace TestingExercises
 {
     [TestClass]
-    public class StringCalculatorTests
+    public class StringCalculatorAddTests
     {
-        private StringCalculator _calculator;
+        private readonly StringCalculator _calculator;
 
-        public StringCalculatorTests()
+        public StringCalculatorAddTests()
         {
             _calculator = new StringCalculator();
         }
