@@ -1,8 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Xunit;
 
-namespace TestingExercises.test
+namespace TestingExercises.beeroclock
 {
     [TestClass]
     public class BeerOClockCheckerTest

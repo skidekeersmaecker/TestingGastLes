@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace TestingExercises.test
+namespace TestingExercises
 {
     public class ParametrizedTestExample
     {

@@ -77,7 +77,7 @@
     <Compile Include="loganalyzer\ILogSource.cs" />
     <Compile Include="loganalyzer\LogAnalyzer.cs" />
     <Compile Include="tdd-stringcalculator\StringCalculator.cs" />
-    <Compile Include="tdd-stringcalculator\StringCalculatorTests.cs" />
+    <Compile Include="tdd-stringcalculator\StringCalculatorAddTests.cs" />
     <Compile Include="tripservice\CollaboratorCallException.cs" />
     <Compile Include="tripservice\Trip.cs" />
     <Compile Include="tripservice\TripDAO.cs" />

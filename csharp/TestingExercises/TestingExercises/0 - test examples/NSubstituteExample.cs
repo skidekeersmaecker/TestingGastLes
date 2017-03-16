@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NSubstitute;
 
-namespace TestingExercises.test
+namespace TestingExercises
 {
     public class NSubstituteExample
     {

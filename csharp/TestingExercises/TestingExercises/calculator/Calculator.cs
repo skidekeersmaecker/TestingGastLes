@@ -1,4 +1,4 @@
-﻿namespace TestingExercises
+﻿namespace TestingExercises.calculator
 {
     public class Calculator
     {

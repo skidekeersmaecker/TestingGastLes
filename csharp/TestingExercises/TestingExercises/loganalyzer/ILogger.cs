@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TestingExercises.loganalyzer
+﻿namespace TestingExercises.loganalyzer
 {
     public interface ILogger
     {
