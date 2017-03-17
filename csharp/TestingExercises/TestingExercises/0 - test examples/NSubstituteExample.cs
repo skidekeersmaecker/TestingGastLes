@@ -3,6 +3,7 @@ using NSubstitute;
 
 namespace TestingExercises
 {
+    [TestClass]
     public class NSubstituteExample
     {
         public interface IFoo
@@ -26,14 +27,25 @@ namespace TestingExercises
         }
 
         [TestMethod]
-        public void Example()
+        public void stub_example()
         {
-            var aFoo = Substitute.For<IFoo>();
-            aFoo.Bar().Returns(1337);
+            var aFoo = Substitute.For<IFoo>(); //A fake IFoo object
+            aFoo.Bar().Returns(1337); //Arrange: dear aFoo, whenever your Bar() gets called, always return 1337
 
             var aBaz = new Baz(aFoo);
 
             Assert.IsTrue(aBaz.Qux());
+        }
+
+        [TestMethod]
+        public void mock_example()
+        {
+            var aFoo = Substitute.For<IFoo>(); //A fake IFoo object
+            var aBaz = new Baz(aFoo);
+
+            aBaz.Qux();
+
+            aFoo.Received().Bar(); //Assert: dear aFoo, did you receive the message Bar()?
         }
     }
 }
