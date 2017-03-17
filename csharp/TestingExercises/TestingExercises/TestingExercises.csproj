@@ -73,6 +73,7 @@
     <Compile Include="beeroclock\BeerOClockChecker.cs" />
     <Compile Include="calculator\Calculator.cs" />
     <Compile Include="1 - parameterized-test-example\Fibonacci.cs" />
+    <Compile Include="fizzbuzz\FizzBuzzTests.cs" />
     <Compile Include="loganalyzer\ILogger.cs" />
     <Compile Include="loganalyzer\ILogSource.cs" />
     <Compile Include="loganalyzer\LogAnalyzer.cs" />
