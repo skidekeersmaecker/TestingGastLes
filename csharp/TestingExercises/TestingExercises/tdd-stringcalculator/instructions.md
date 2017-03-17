@@ -1,4 +1,4 @@
-﻿Kata by Roy Osherove
+﻿String Calculator Kata by Roy Osherove
 ===
 
 Instructions:
