@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NSubstitute;
 
 namespace TestingExercises.beeroclock
 {
@@ -7,9 +8,14 @@ namespace TestingExercises.beeroclock
     public class BeerOClockCheckerTest
     {
         [TestMethod]
-        public void KnowsWhenItIsBeerOClock()
+        public void KnowWhenItIsNotBeerOClock()
         {
-            throw new NotImplementedException("TODO: write specs for the checker.");
+            var alwaysOneClock = Substitute.For<IClock>();
+            alwaysOneClock.Now().Returns(DateTime.Parse("13:00:00"));
+
+            var checker = new BeerOClockChecker(alwaysOneClock);
+
+            Assert.IsFalse(checker.IsBeerOClock());
         } 
     }
 }

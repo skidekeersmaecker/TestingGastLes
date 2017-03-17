@@ -7,15 +7,33 @@ namespace TestingExercises.calculator
     public class CalculatorTests
     {
         [TestMethod]
-        public void CanAdd()
+        public void CanAddPos()
         {
-            Assert.Fail("Spec add behaviour.");
+            Calculator calculater = new Calculator();
+
+            Assert.AreEqual(calculater.Add(2, 3), 5);
+        }
+        [TestMethod]
+        public void CanAddNegAndPos()
+        {
+            Calculator calculater = new Calculator();
+
+            Assert.AreEqual(calculater.Add(-2, 3), 1);
+        }
+        [TestMethod]
+        public void CanAddNeg()
+        {
+            Calculator calculater = new Calculator();
+
+            Assert.AreEqual(calculater.Add(-2, -3), -5);
         }
 
-        [TestMethod]
+       /* [TestMethod]
         public void CanMultiply()
         {
-            Assert.Fail("Spec multiply behaviour.");
-        }
+            Calculator calculater = new Calculator();
+            
+            Assert.AreEqual(calculater.Multiply(-3, 3), -9);
+        }*/
     }
 }

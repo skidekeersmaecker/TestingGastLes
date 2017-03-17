@@ -6,9 +6,20 @@ namespace TestingExercises.fizzbuzz
     public class FizzBuzzTests
     {
         [TestMethod]
-        public void WriteYourTestsHere()
+        public void three_is_fizz()
         {
-            Assert.Fail("TODO: test-drive a fizzbuzz implementation");
+            Assert.AreEqual("Fizz", FizzBuzz(3));
+        }
+
+        [TestMethod]
+        public void five_is_buzz()
+        {
+            Assert.AreEqual("Fizz", FizzBuzz(5));
+        }
+
+        private string FizzBuzz(int i)
+        {
+            return (i == 3) ? "Fizz" : "Buzz";
         }
     }
 }
